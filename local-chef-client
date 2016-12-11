@@ -1,0 +1,8 @@
+#!/bin/bash
+cmd="berks vendor -b $(pwd)/cookbooks/dev_box/Berksfile"
+pushd /tmp
+rm -rf cookbooks
+$cmd
+mv berks-cookbooks cookbooks
+sudo chef-client -z  -r "$@"
+popd

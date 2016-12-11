@@ -1,0 +1,6 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'chrome', github: 'dhoer/chef-chrome'
+
+metadata
+
