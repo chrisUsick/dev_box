@@ -1,6 +1,7 @@
 source 'https://supermarket.chef.io'
 
 cookbook 'chrome', github: 'dhoer/chef-chrome'
+cookbook 'atom', '~> 0.2.0'
 
 metadata
 
